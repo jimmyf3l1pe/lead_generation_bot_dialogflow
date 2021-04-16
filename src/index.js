@@ -30,7 +30,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
    // use service account creds
     await doc.useServiceAccountAuth({
          client_email:"your google service account id",
-         private_key: "your account private key,
+         private_key: "your account private key",
 });
     
     await doc.loadInfo(); // loads document properties and worksheets
